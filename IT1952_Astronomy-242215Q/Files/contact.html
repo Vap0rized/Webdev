@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="storyForm.css">
+</head>
+
+<body>
+    <img src="../images/png-transparent-desktop-blue-space-nebula-space-texture-blue-atmosphere.png"
+        alt="background image" class="background-image">
+    <header>
+        <a href="main.html"><img class="logo" src="../images/image.png" alt="logo"></a>
+        <a href="#">
+            <h1 onclick="location.href='main.html'">Orbital insights</h1>
+        </a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SolarSystem.html">Our Solar system</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html"><button>Contact</button></a>
+    </header>
+    <div class="form-style-10">
+        <h1>Contact us!<span>If you have any questions</span></h1>
+        <form id="contactForm" method="POST" action="FormProcessor2.html">
+            <div class="section"><span>1</span>Name and Email</div>
+            <div class="inner-wrap">
+                <label>Your Full Name <input type="text" name="name" id="name"required /></label>
+                <label>Email Address <input type="email" name="email" id="email" required/></label>
+            </div>
+
+            <div class="section"><span>2</span>Enter your message</div>
+            <div class="inner-wrap">
+                <textarea id="message" name="text" rows="4" cols="50" required placeholder="Enter text"></textarea>
+            </div>
+            <div class="button-section">
+                <input type="submit" name="Sign Up" onclick="submits()" />
+                <span class="privacy-policy">
+                    <input type="checkbox" name="field7" required>You agree to our Terms and Policy.
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="SolarSystem.html">Our Solar System</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy; 2024 Designed by Zachary</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function submits() {
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
+            if (name && email && message) {
+                var params = new URLSearchParams();
+                params.append('name', name);
+                params.append('email', email);
+                params.append('message', message);
+                setTimeout(function() {
+                    window.location.href = 'FormProcessor2.html?' + params.toString();
+                }, 1);
+            }
+        }
+    </script>
+</body>
+
+</html>

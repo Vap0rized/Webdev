@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(../images/t.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img.logo {
+    height: 50px;
+}
+
+header h1 {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta button {
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 160px;
+}
+
+main {
+    padding: 100px 20px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro, .did-you-know, .about-space {
+    margin-bottom: 40px;
+}
+
+.intro h3 {
+    text-align: center;
+    font-size: 2.5em;
+    color: dodgerblue;
+    margin-bottom: 10px;
+}
+
+.intro h5 {
+    text-align: center;
+    font-size: 1.5em;
+    color: palegoldenrod;
+}
+
+.did-you-know h4 {
+    font-size: 2em;
+    color: wheat;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.did-you-know .content ul {
+    list-style: none;
+    font-size: 1.25em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.did-you-know .content ul li {
+    margin-bottom: 15px;
+}
+
+.about-space h2 {
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-space span {
+    color: yellowgreen;
+}
+
+.about-space .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerNav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .intro h3 {
+        font-size: 1.5em;
+    }
+    .intro h5 {
+        font-size: 1.25em;
+    }
+    .did-you-know h4 {
+        font-size: 1.25em;
+    }
+    .did-you-know .content ul {
+        font-size: 1em;
+    }
+    .about-space h2 {
+        font-size: 1.5em;
+    }
+    .about-space .about-content {
+        font-size: 1em;
+    }
+}

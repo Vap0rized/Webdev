@@ -1,0 +1,181 @@
+
+body, html {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+header img.logo {
+    height: 50px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cta button {
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.bg {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    
+    
+}
+
+h6 {
+    color: goldenrod;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: -160px;
+    text-shadow: 2px 3px 5px rgb(40,80,200);
+}
+
+#div1, #art2, #art3 {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#div1 {
+    background-color: darkcyan;
+    color: palegreen;
+}
+
+#art2 {
+    background-color: darkcyan;
+    color: yellow;
+}
+
+#art3 {
+    background-color: black;
+    color: white;
+}
+
+#title {
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+#sub1 {
+    text-align: left;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+#art2 h3, #art3 h3, h2, h5 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#art2 img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.middle {
+    text-align: center;
+}
+
+.planets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.planet-card {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.planet-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    clip-path: circle();
+}
+
+.planet-card h4 {
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+}
+
+.planet-card p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+.footerContainer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerNav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+}
+#sunbox {
+    clip-path: circle();
+}
+h5 {
+    font-size: 50px;
+    color: deepskyblue;
+}
+h2 {
+    font-size: 50px;
+    color: darkturquoise;
+}
+h3 {
+    font-size: 60px;
+}
+span {
+    color: cornflowerblue;
+}

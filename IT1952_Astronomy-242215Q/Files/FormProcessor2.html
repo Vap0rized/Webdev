@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="REFRESH" content="5;url=main.html">
+    <title>Form Processor</title>
+    <style>
+        article {
+            font-family: Bradley Hand ITC;
+            line-height: 2em;
+            font-size: 1.5em;
+            padding: 20px;
+            border-radius: 100px 10px 100px 0px;
+            background-color: #FFFF99;
+            margin: 10px auto;
+            width: 500px;
+            -webkit-transform: skewX(-20deg);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .blank {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1>Thank you <span id="userName" class="blank"></span> for filling this form out</h1>
+        <p>Your message ID is: <span id="userMessage" class="blank"></span></p>
+        <p>We will get back to you in 2 working days.</p>
+        <p>Redirecting in 5 seconds...</p>
+    </article>
+
+    <script>
+		function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        function displayUserInfo() {
+            const userName = getURLParameter('name');
+            const userMessage = getURLParameter('message');
+            const userEmail = getURLParameter('email');
+            const userNameElement = document.getElementById('userName');
+            const userMessageElement = document.getElementById('userMessage');
+            const userEmailElement = document.getElementById('userEmail');
+            const userNumberElement = document.getElementById('userNumber')
+            userNameElement.innerText = userName ? userName : 'No Name Provided';
+            userMessageElement.innerText = userMessage ? userMessage : 'No Message Provided';
+            userEmailElement.innerText = userEmail ? userEmail : 'No Email Provided';
+        }
+
+        window.onload = function() {
+            displayUserInfo();
+            redirectAfterDelay();
+        }
+
+    </script>
+</body>
+</html>
